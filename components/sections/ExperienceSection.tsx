@@ -11,7 +11,7 @@ export const ExperienceSection = () => (
       {TIMELINE.map((job) => (
         <div
           key={job.company}
-          className="grid grid-cols-[200px_1fr] gap-12 py-10 border-t border-[rgba(70,69,84,0.3)]"
+          className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-4 sm:gap-12 py-10 border-t border-[rgba(70,69,84,0.3)]"
         >
           <div>
             <div className="text-[#908fa0] font-mono text-xs tracking-[0.05em] mb-1.5">

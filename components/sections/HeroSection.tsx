@@ -1,7 +1,7 @@
 import { STATS } from "@/lib/portfolio-data";
 
 export const HeroSection = () => (
-  <section className="min-h-screen flex flex-col justify-center px-8 pt-32 pb-16 max-w-7xl mx-auto">
+  <section className="flex flex-col px-4 sm:px-8 pt-28 sm:pt-32 pb-16 sm:pb-20 max-w-7xl mx-auto">
     <div className="flex items-center gap-2 mb-7">
       <span className="size-2 rounded-full bg-[#4ae176] inline-block" />
       <span className="text-[#908fa0] font-mono text-xs tracking-[0.12em] uppercase">

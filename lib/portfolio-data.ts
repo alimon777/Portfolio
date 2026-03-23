@@ -70,7 +70,7 @@ export const TIMELINE: TimelineItem[] = [
     role: "Software Engineer I",
     period: "Sep 2024 — Sep 2025",
     company: "UST, Trivandrum",
-    desc: "Enhanced core enterprise microservices in Java and Spring Boot. Built a serverless AWS Lambda pipeline for anonymized financial test data. Implemented an end-to-end ticket automation system with FastAPI and Next.js, reducing manual workload by 40%.",
+    desc: "Built a serverless AWS Lambda pipeline for anonymized financial test data. Implemented an end-to-end ticket automation system with FastAPI and Next.js, reducing manual workload by 40%.",
   },
   {
     role: "Software Developer Trainee",
