@@ -56,12 +56,12 @@ export const AnimatedLinesBg = ({ className }: AnimatedLinesBgProps) => (
       <mask id="lm-trib2"><path d={TRIB2} stroke="white" strokeWidth="1.2" fill="none" /></mask>
       <mask id="lm-trib3"><path d={TRIB3} stroke="white" strokeWidth="1.2" fill="none" /></mask>
 
-      <radialGradient id="lg-cyan"   fx="1"><stop offset="0%" stopColor="#00E8ED" stopOpacity="0.35" /><stop offset="100%" stopColor="transparent" /></radialGradient>
-      <radialGradient id="lg-blue"   fx="1"><stop offset="0%" stopColor="#0088ff" stopOpacity="0.30" /><stop offset="100%" stopColor="transparent" /></radialGradient>
-      <radialGradient id="lg-yellow" fx="1"><stop offset="0%" stopColor="#FFD800" stopOpacity="0.25" /><stop offset="100%" stopColor="transparent" /></radialGradient>
-      <radialGradient id="lg-pink"   fx="1"><stop offset="0%" stopColor="#FF008B" stopOpacity="0.25" /><stop offset="100%" stopColor="transparent" /></radialGradient>
-      <radialGradient id="lg-green"  fx="1"><stop offset="0%" stopColor="#22c55e" stopOpacity="0.25" /><stop offset="100%" stopColor="transparent" /></radialGradient>
-      <radialGradient id="lg-purple" fx="1"><stop offset="0%" stopColor="#c0c1ff" stopOpacity="0.30" /><stop offset="100%" stopColor="transparent" /></radialGradient>
+      <radialGradient id="lg-cyan"   fx="1"><stop offset="0%" stopColor="#5eead4" stopOpacity="0.30" /><stop offset="100%" stopColor="transparent" /></radialGradient>
+      <radialGradient id="lg-blue"   fx="1"><stop offset="0%" stopColor="#2dd4bf" stopOpacity="0.25" /><stop offset="100%" stopColor="transparent" /></radialGradient>
+      <radialGradient id="lg-yellow" fx="1"><stop offset="0%" stopColor="#fbbf24" stopOpacity="0.22" /><stop offset="100%" stopColor="transparent" /></radialGradient>
+      <radialGradient id="lg-pink"   fx="1"><stop offset="0%" stopColor="#f97316" stopOpacity="0.22" /><stop offset="100%" stopColor="transparent" /></radialGradient>
+      <radialGradient id="lg-green"  fx="1"><stop offset="0%" stopColor="#34d399" stopOpacity="0.25" /><stop offset="100%" stopColor="transparent" /></radialGradient>
+      <radialGradient id="lg-purple" fx="1"><stop offset="0%" stopColor="#14b8a6" stopOpacity="0.28" /><stop offset="100%" stopColor="transparent" /></radialGradient>
     </defs>
   </svg>
 );

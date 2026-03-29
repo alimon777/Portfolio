@@ -1,6 +1,7 @@
 import type {
   ExpertiseCardItem,
   ProjectItem,
+  ProjectGroup,
   StatItem,
   TimelineItem,
   ToolkitItem,
@@ -24,40 +25,63 @@ export const EXPERTISE_CARDS: ExpertiseCardItem[] = [
   },
 ];
 
-export const PROJECTS: ProjectItem[] = [
+export const PROJECT_GROUPS: ProjectGroup[] = [
   {
-    title: "PR Agent BYOK",
-    badge: "Enterprise",
-    badgeIcon: "deployed_code",
-    desc: "A sovereign AI code reviewer. It synthesizes codebase patterns to provide contextual fixes and automated documentation.",
-    tags: ["PYTHON", "OPENAI", "REDIS"],
-    link: true,
+    name: "Developer Tools",
+    icon: "build",
+    projects: [
+      {
+        title: "SkillVault",
+        badge: "VS Code Extension",
+        badgeIcon: "extension",
+        desc: "Turn your GitHub repo into a queryable library of AI instruction skills. Browse, apply, and share coding instructions without leaving your editor.",
+        tags: ["TYPESCRIPT", "VS CODE", "GITHUB API"],
+        appLink: "https://skillvault.alimon.in",
+        codeUrl: "https://github.com/alimon777/SkillVault-ext",
+      },
+      {
+        title: "PR Agent BYOK",
+        badge: "Enterprise",
+        badgeIcon: "deployed_code",
+        desc: "A sovereign AI code reviewer. It synthesizes codebase patterns to provide contextual fixes and automated documentation.",
+        tags: ["PYTHON", "OPENAI", "REDIS"],
+        codeUrl: "https://github.com/alimon777/pr-agent-byok",
+      },
+    ],
   },
   {
-    title: "SyntheticDev",
-    badge: "Infrastructure",
-    badgeIcon: "terminal",
-    desc: "A local-first developer sandbox that uses Llama3 to generate production-ready boilerplate from architectural diagrams.",
-    tags: ["RUST", "LLAMA3", "WASM"],
-    link: true,
-  },
-  {
-    title: "Logic Weaver",
-    badge: null,
-    badgeIcon: "hub",
-    desc: "Graph-based dependency visualizer that uses LLMs to identify architectural bottleneck and circular dependencies.",
-    tags: ["GO", "NEO4J"],
-    link: true,
-  },
-  {
-    title: "DocuGen AI",
-    badge: null,
-    badgeIcon: "description",
-    desc: "Automated technical specification generator that analyzes multi-file PR diffs to create high-level architectural summaries.",
-    tags: ["PYTHON", "GEMINI"],
-    link: false,
+    name: "AI & Infrastructure",
+    icon: "hub",
+    projects: [
+      {
+        title: "SyntheticDev",
+        badge: "Infrastructure",
+        badgeIcon: "terminal",
+        desc: "A local-first developer sandbox that uses Llama3 to generate production-ready boilerplate from architectural diagrams.",
+        tags: ["RUST", "LLAMA3", "WASM"],
+        codeUrl: "https://github.com/alimon777/syntheticdev",
+      },
+      {
+        title: "Logic Weaver",
+        badge: null,
+        badgeIcon: "hub",
+        desc: "Graph-based dependency visualizer that uses LLMs to identify architectural bottleneck and circular dependencies.",
+        tags: ["GO", "NEO4J"],
+        codeUrl: "https://github.com/alimon777/logic-weaver",
+      },
+      {
+        title: "DocuGen AI",
+        badge: null,
+        badgeIcon: "description",
+        desc: "Automated technical specification generator that analyzes multi-file PR diffs to create high-level architectural summaries.",
+        tags: ["PYTHON", "GEMINI"],
+      },
+    ],
   },
 ];
+
+// Flat list for backward compatibility
+export const PROJECTS: ProjectItem[] = PROJECT_GROUPS.flatMap((g) => g.projects);
 
 export const TIMELINE: TimelineItem[] = [
   {

@@ -2,64 +2,64 @@
 
 /* ─── Dark theme (default) ─── */
 :root {
-  --c-bg: #101416;
-  --c-bg-alt: #191c1e;
-  --c-bg-card: #1d2022;
-  --c-bg-card-hover: #272a2d;
-  --c-bg-footer: #0b0f11;
-  --c-bg-nav: rgba(18, 21, 23, 0.85);
-  --c-bg-cta: #131618;
+  --c-bg: #0f1114;
+  --c-bg-alt: #161a1d;
+  --c-bg-card: #1c1f23;
+  --c-bg-card-hover: #252a2e;
+  --c-bg-footer: #0a0c0f;
+  --c-bg-nav: rgba(15, 17, 20, 0.88);
+  --c-bg-cta: #121518;
 
-  --c-fg: #e1e3e6;
-  --c-fg-muted: #908fa0;
-  --c-fg-secondary: #c7c4d7;
+  --c-fg: #e2e4e8;
+  --c-fg-muted: #8a919c;
+  --c-fg-secondary: #b8bcc6;
 
-  --c-accent: #c0c1ff;
-  --c-accent-2: #8b8cff;
-  --c-accent-glow: rgba(192, 193, 255, 0.35);
-  --c-accent-glow-strong: rgba(192, 193, 255, 0.55);
+  --c-accent: #5eead4;
+  --c-accent-2: #2dd4bf;
+  --c-accent-glow: rgba(94, 234, 212, 0.28);
+  --c-accent-glow-strong: rgba(94, 234, 212, 0.48);
 
-  --c-border: rgba(70, 69, 84, 0.30);
-  --c-border-strong: rgba(70, 69, 84, 0.50);
-  --c-border-hover: rgba(70, 69, 84, 0.80);
+  --c-border: rgba(62, 72, 80, 0.30);
+  --c-border-strong: rgba(62, 72, 80, 0.50);
+  --c-border-hover: rgba(62, 72, 80, 0.80);
 
-  --c-badge-bg: #3f465c;
-  --c-badge-fg: #bec6e0;
+  --c-badge-bg: #1e3a3a;
+  --c-badge-fg: #a7f3d0;
 
   --c-green: #4ae176;
-  --c-divider: #464554;
-  --c-btn-text: #1a0080;
+  --c-divider: #2d3439;
+  --c-btn-text: #022c22;
 }
 
 /* ─── Light theme ─── */
 html.light {
-  --c-bg: #f4f5f7;
-  --c-bg-alt: #e8e9f0;
+  --c-bg: #f6f7f9;
+  --c-bg-alt: #eceef2;
   --c-bg-card: #ffffff;
-  --c-bg-card-hover: #f0f0f8;
-  --c-bg-footer: #dddde8;
-  --c-bg-nav: rgba(244, 245, 247, 0.92);
-  --c-bg-cta: #e8e9f0;
+  --c-bg-card-hover: #f0f4f4;
+  --c-bg-footer: #e0e4e8;
+  --c-bg-nav: rgba(246, 247, 249, 0.92);
+  --c-bg-cta: #eceef2;
 
   --c-fg: #111827;
-  --c-fg-muted: #5f6780;
+  --c-fg-muted: #5c6370;
   --c-fg-secondary: #374151;
 
-  --c-accent: #5254cc;
-  --c-accent-2: #7071d8;
-  --c-accent-glow: rgba(82, 84, 204, 0.25);
-  --c-accent-glow-strong: rgba(82, 84, 204, 0.45);
+  --c-accent: #0d9488;
+  --c-accent-2: #14b8a6;
+  --c-accent-glow: rgba(13, 148, 136, 0.22);
+  --c-accent-glow-strong: rgba(13, 148, 136, 0.40);
 
-  --c-border: rgba(100, 110, 140, 0.18);
-  --c-border-strong: rgba(100, 110, 140, 0.30);
-  --c-border-hover: rgba(100, 110, 140, 0.55);
+  --c-border: rgba(80, 100, 110, 0.18);
+  --c-border-strong: rgba(80, 100, 110, 0.30);
+  --c-border-hover: rgba(80, 100, 110, 0.55);
 
-  --c-badge-bg: #dde0ff;
-  --c-badge-fg: #2d2f8a;
+  --c-badge-bg: #d1fae5;
+  --c-badge-fg: #065f46;
 
   --c-green: #16a34a;
-  --c-divider: #9ca3af;
-  --c-btn-text: #1a0080;
+  --c-divider: #94a3b8;
+  --c-btn-text: #022c22;
 }
 
 @theme inline {
@@ -87,7 +87,7 @@ body {
 
 /* ─── Gradient primary button ─── */
 .btn-primary {
-  background: linear-gradient(120deg, #a78bfa, #c0c1ff, #818cf8, #a78bfa);
+  background: linear-gradient(120deg, #2dd4bf, #5eead4, #14b8a6, #2dd4bf);
   background-size: 300% 100%;
   background-position: 100% 0;
   color: var(--c-btn-text);
@@ -97,7 +97,7 @@ body {
 }
 .btn-primary:hover {
   background-position: 0% 0;
-  box-shadow: 0 0 40px var(--c-accent-glow-strong), 0 4px 30px rgba(129, 140, 248, 0.3);
+  box-shadow: 0 0 40px var(--c-accent-glow-strong), 0 4px 30px rgba(45, 212, 191, 0.25);
   transform: translateY(-2px) scale(1.02);
 }
 .btn-primary:active {

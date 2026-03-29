@@ -10,7 +10,14 @@ export interface ProjectItem {
   badgeIcon: string;
   desc: string;
   tags: string[];
-  link: boolean;
+  appLink?: string;
+  codeUrl?: string;
+}
+
+export interface ProjectGroup {
+  name: string;
+  icon: string;
+  projects: ProjectItem[];
 }
 
 export interface TimelineItem {

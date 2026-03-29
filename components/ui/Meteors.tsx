@@ -48,14 +48,14 @@ export const Meteors = ({ number = 20, className }: MeteorsProps) => {
             // rotate(35deg) travels top-left → bottom-right
             "absolute h-px w-px rounded-full rotate-[35deg]",
             // tail behind the dot (trailing left = toward origin)
-            "before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:w-[80px] before:h-px before:bg-gradient-to-l before:from-[#c0c1ff] before:to-transparent",
+            "before:content-[''] before:absolute before:top-1/2 before:-translate-y-1/2 before:right-0 before:w-[80px] before:h-px before:bg-gradient-to-l before:from-[#5eead4] before:to-transparent",
             className
           )}
           style={{
             top: s.top,
             left: s.left,
-            background: "#c0c1ff",
-            boxShadow: "0 0 6px 2px rgba(192,193,255,0.6)",
+            background: "#5eead4",
+            boxShadow: "0 0 6px 2px rgba(94,234,212,0.6)",
             animation: `meteor ${s.duration} linear ${s.delay} infinite`,
           }}
         />
