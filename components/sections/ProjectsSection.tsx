@@ -10,16 +10,16 @@ interface ProjectCardProps extends ProjectItem {
 }
 
 const ProjectCard = ({ title, badge, badgeIcon, desc, tags, appLink, codeUrl, onTagClick, onBadgeClick }: ProjectCardProps) => {
-  const Wrapper = appLink ? "a" : "div";
-  const wrapperProps = appLink ? { href: appLink, target: "_blank", rel: "noopener noreferrer" } : {};
-
   return (
-    <Wrapper
-      {...wrapperProps}
-      className="rounded-xl p-8 flex flex-col h-full transition-colors duration-200 cursor-pointer no-underline"
-      style={{ background: "var(--c-bg-card)" }}
-      onMouseEnter={(e: React.MouseEvent<HTMLElement>) => (e.currentTarget.style.background = "var(--c-bg-card-hover)")}
-      onMouseLeave={(e: React.MouseEvent<HTMLElement>) => (e.currentTarget.style.background = "var(--c-bg-card)")}
+    <div
+      role={appLink ? "link" : undefined}
+      tabIndex={appLink ? 0 : undefined}
+      onClick={() => { if (appLink) window.open(appLink, "_blank", "noopener,noreferrer"); }}
+      onKeyDown={(e) => { if (appLink && (e.key === "Enter" || e.key === " ")) window.open(appLink, "_blank", "noopener,noreferrer"); }}
+      className="rounded-xl p-8 flex flex-col h-full transition-colors duration-200 no-underline"
+      style={{ background: "var(--c-bg-card)", cursor: appLink ? "pointer" : "default" }}
+      onMouseEnter={(e) => (e.currentTarget.style.background = "var(--c-bg-card-hover)")}
+      onMouseLeave={(e) => (e.currentTarget.style.background = "var(--c-bg-card)")}
     >
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
@@ -67,7 +67,7 @@ const ProjectCard = ({ title, badge, badgeIcon, desc, tags, appLink, codeUrl, on
           </a>
         )}
       </div>
-    </Wrapper>
+    </div>
   );
 };
 
